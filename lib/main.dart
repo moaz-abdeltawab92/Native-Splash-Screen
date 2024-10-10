@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:splash_screen/features/ui/screens/onboarding_screen1.dart';
 
 void main() {
   runApp(const SplashScreen());
@@ -10,11 +11,8 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Splash Screen'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: OnboardingScreen1(),
     );
   }
 }
